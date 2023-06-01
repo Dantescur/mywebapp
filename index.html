@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio de Daniel</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <style>
+    .fade-in {
+      animation: fadeIn ease 1s;
+    }
+    @keyframes fadeIn {
+      0% {opacity:0;}
+      100% {opacity:1;}
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+
+  <header class="bg-gradient-to-r from-purple-700 to-indigo-800 text-white shadow-md">
+    <div class="container mx-auto p-4 flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold">Portafolio de Daniel</a>
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="#inicio" class="hover:text-gray-200">Inicio</a></li>
+          <li><a href="#proyectos" class="hover:text-gray-200">Proyectos</a></li>
+          <li><a href="#acerca-de" class="hover:text-gray-200">Acerca de</a></li>
+          <li><a href="#blog" class="hover:text-gray-200">Blog</a></li>
+          <li><a href="#contacto" class="hover:text-gray-200">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container mx-auto my-12">
+    <section id="inicio" class="bg-gray-800 p-8 rounded shadow mb-12 animate_animated animate_fadeIn">
+      <h1 class="text-4xl font-bold mb-4">Bienvenido a mi portafolio</h1>
+      <p>¡Hola! Soy Daniel, desarrollador web. Descubre más sobre mí y mis proyectos a continuación.</p>
+    </section>
+
+    <!-- Sección de Proyectos -->
+    <section id="proyectos" class="bg-gray-800 p-8 rounded shadow mb-12 animate_animated animate_fadeIn">
+      <h2 class="text-4xl font-bold mb-6">Proyectos</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <!-- Proyecto 1 -->
+        <div class="bg-gray-700 p-4 rounded animate_animated animate_fadeInUp">
+          <img src="https://via.placeholder.com/350x200" alt="Proyecto 1" class="w-full h-48 object-cover mb-4 rounded">
+          <h3 class="text-xl font-bold mb-2">Proyecto 1</h3>
+          <p>Descripción breve del proyecto 1.</p>
+        </div>
+        <!-- Proyecto 2 -->
+        <div class="bg-gray-700 p-4 rounded animate_animated animate_fadeInUp">
+          <img src="https://via.placeholder.com/350x200" alt="Proyecto 2" class="w-full h-48 object-cover mb-4 rounded">
+          <h3 class="text-xl font-bold mb-2">Proyecto 2</h3>
+          <p>Descripción breve del proyecto 2.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Acerca de mí -->
+    <section id="acerca-de" class="bg-gray-800 p-8 rounded shadow mb-12 animate_animated animate_fadeIn">
+      <h2 class="text-4xl font-bold mb-6">Acerca de mí</h2>
+      <p>
+        Soy Daniel, de Cuba, y me encanta todo lo relacionado con tecnología. Siempre estoy tratando de aprender algo nuevo y hacer algo con lo que ya sé. Domino HTML, CSS, PHP, algo de JavaScript y MySQL. Aunque nunca he trabajado como desarrollador web, también tengo conocimientos sobre administración de servidores Linux y ciberseguridad. En mi tiempo libre, disfruto jugando y viendo anime. Mi sueño es irme de Cuba y explorar nuevas oportunidades.
+      </p>
+    </section>
+
+    <!-- Sección de Blog -->
+    <section id="blog" class="bg-gray-800 p-8 rounded shadow mb-12 animate_animated animate_fadeIn">
+      <h2 class="text-4xl font-bold mb-6">Blog</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <!-- Entrada del blog 1 -->
+        <div class="bg-gray-700 p-4 rounded animate_animated animate_fadeInUp">
+          <img src="https://via.placeholder.com/350x200" alt="Entrada del blog 1" class="w-full h-48 object-cover mb-4 rounded">
+          <h3 class="text-xl font-bold mb-2">Entrada del blog 1</h3>
+          <p>Descripción breve de la entrada del blog 1.</p>
+        </div>
+        <!-- Entrada del blog 2 -->
+        <div class="bg-gray-700 p-4 rounded animate_animated animate_fadeInUp">
+          <img src="https://via.placeholder.com/350x200" alt="Entrada del blog 2" class="w-full h-48 object-cover mb-4 rounded">
+          <h3 class="text-xl font-bold mb-2">Entrada del blog 2</h3>
+          <p>Descripción breve de la entrada del blog 2.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="bg-gray-800 p-8 rounded shadow animate_animated animate_fadeIn">
+      <h2 class="text-4xl font-bold mb-6">Contacto</h2>
+      <p>Si deseas ponerte en contacto conmigo, no dudes en enviarme un mensaje a través del siguiente formulario:</p>
+      <form action="#" method="POST" class="mt-4">
+        <div class="mb-4">
+          <label for="nombre" class="block mb-2">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" class="w-full bg-gray-700 text-white rounded px-2 py-1">
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block mb-2">Correo electrónico:</label>
+          <input type="email" id="email" name="email" class="w-full bg-gray-700 text-white rounded px-2 py-1">
+        </div>
+        <div class="mb-4">
+          <label for="mensaje" class="block mb-2">Mensaje:</label>
+          <textarea name="mensaje" id="mensaje" rows="4" class="w-full bg-gray-700 text-white rounded px-2 py-1"></textarea>
+        </div>
+        <button type="submit" class="bg-purple-700 hover:bg-purple-600 px-4 py-2 rounded font-bold">Enviar mensaje</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="bg-gray-800 text-gray-300 py-4">
+    <div class="container mx-auto flex justify-center items-center">
+      <p>© 2023 Daniel - Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+</body>
+</html>
